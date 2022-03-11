@@ -9,6 +9,7 @@
   "author": "punam thapa",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.5.1"
+    "cypress": "^9.5.1",
+    "cypress-xpath": "^1.6.2"
   }
 }
