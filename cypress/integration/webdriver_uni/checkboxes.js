@@ -1,8 +1,12 @@
 /// <reference types="Cypress" />
 describe(" verify checkboxe", () => {
-    it("check and validate checkbox", () => {
+    beforeEach(()=>{
         cy.visit("http://www.webdriveruniversity.com/");
         cy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr','target').click();
+
+    })
+    it("check and validate checkbox", () => {
+        
         //cy.get('#checkboxes > :nth-child(1) > input').check();
         // cy.get('#checkboxes > :nth-child(1) > input').check().should('be.checked');
         
@@ -11,14 +15,9 @@ describe(" verify checkboxe", () => {
         cy.get('@option-1').check();
         cy.get('@option-1').check().should('be.checked')
 
-       
-
-
-    
-    })
+       })
     it("uncheck and validate checkbox", () => {
-        cy.visit("http://www.webdriveruniversity.com/");
-        cy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr','target').click();
+      
         cy.get(':nth-child(5) > input').as('option-3');
         cy.get('@option-3').uncheck();
         cy.get('@option-3').uncheck().should('not.be.checked')
