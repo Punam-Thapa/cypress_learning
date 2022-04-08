@@ -7,7 +7,7 @@ describe(" verify checkboxe", () => {
     })
     it("check and validate checkbox", () => {
         
-        //cy.get('#checkboxes > :nth-child(1) > input').check();
+        //cy.get('#c heckboxes > :nth-child(1) > input').check();
         // cy.get('#checkboxes > :nth-child(1) > input').check().should('be.checked');
         
         //using alias
