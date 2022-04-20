@@ -1,3 +1,14 @@
 {
-    "chromeWebSecurity": false
+  "chromeWebSecurity": false,
+  "env": {
+    "first_name": "punaaaam"
+  },
+  "projectId": "3koczt",
+  
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporter-config.json"
+    
+  }
+
 }
